@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhclrk5uruy6j"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_11hl3"]
+[ext_resource type="PackedScene" uid="uid://bt21pgs0mo08e" path="res://tree.tscn" id="1_olv2o"]
+
+[node name="main" type="Node2D"]
+position = Vector2(28, 4)
+script = ExtResource("1_11hl3")
+
+[node name="tree" parent="." instance=ExtResource("1_olv2o")]
+position = Vector2(69, 76)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 38.0
+offset_top = 112.0
+offset_right = 99.0
+offset_bottom = 143.0
+text = "Reload"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

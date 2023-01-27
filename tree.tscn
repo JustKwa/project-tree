@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt21pgs0mo08e"]
+
+[ext_resource type="Texture2D" uid="uid://bt2n087bxobua" path="res://assets/tree branch.png" id="1_5iivv"]
+[ext_resource type="Script" path="res://tree.gd" id="1_86j3t"]
+
+[node name="tree" type="Node2D"]
+z_as_relative = false
+y_sort_enabled = true
+script = ExtResource("1_86j3t")
+
+[node name="TreeBranch" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 4)
+scale = Vector2(1, 0.770511)
+texture = ExtResource("1_5iivv")
+
+[node name="branch_end_point" type="Marker2D" parent="."]
+position = Vector2(2.30926e-14, -16)
+rotation = 1.55077

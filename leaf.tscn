@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqdrdmlu4uu1r"]
+
+[ext_resource type="Script" path="res://leaf.gd" id="1_au6cb"]
+[ext_resource type="Texture2D" uid="uid://bfc6hinal55bx" path="res://assets/branch.png" id="2_ad30t"]
+
+[node name="leaf" type="Marker2D"]
+gizmo_extents = 188.6
+script = ExtResource("1_au6cb")
+
+[node name="Branch" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-3, 4)
+texture = ExtResource("2_ad30t")
